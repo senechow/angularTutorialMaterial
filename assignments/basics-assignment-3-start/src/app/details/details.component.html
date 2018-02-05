@@ -1,0 +1,6 @@
+<button class="btn btn-primary" (click)="onDisplayDetailsClick()">Details</button>
+<p *ngIf="displayDetails">Some secret paragraph...</p>
+<div *ngFor="let buttonClick of buttonClicksLogItems;let i = index">
+	<p [ngClass]="{whiteColor: i >= 4}"
+		[ngStyle]="i >= 4 && {backgroundColor: 'blue'}">{{buttonClick}}</p>
+</div>

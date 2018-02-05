@@ -1,0 +1,7 @@
+<div class="row">
+	<div class="col-md-10">
+		<input type="text" [(ngModel)]="userName" />
+		<p>{{userName}}</p>
+		<button class="btn btn-primary" [disabled]="disableClearButton()" (click)="clearUserName()">Clear</button>
+	</div>
+</div>
